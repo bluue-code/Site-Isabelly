@@ -1,0 +1,39 @@
+[foto isa_perfil_g]
+Tarot com
+	Isabelly
+	*frase de merchan*
+
+[nav]
+Tarot com
+Isabelly
+Sobre Mim
+Serviços
+Depoimentos
+Contato
+[foto_intro_g]
+Sobre mim
+loren...
+[foto_isa_about_g]
+Serviços
+[foto_tarot_s1_g]
+Serviço 1
+clique aqui para saber mais
+[foto_tarot_s2_g]
+Serviço 2
+clique aqui para saber mais
+[foto_tarot_s2_g]
+Serviço 3
+clique aqui para saber mais
+Depoimentos
+[foto dep_1_g]
+[foto dep_2_g]
+[foto dep_3_g]
+[foto dep_4_g]
+Agende sua sessão e ilumine sua mente, corpo e alma
+Você pode me achar em:
+[icone tiktok]
+tiktok.com/user
+[icone instagram]
+instagram.com/user
+[icone whatsapp]
+(00) 0 0000-0000
