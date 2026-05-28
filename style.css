@@ -4,7 +4,7 @@
     --cor-de-fundo: #E2EEDE;
     --cor-cabecalho: #FFD1DE;
     --cor-div: #EED0C8;
-    --cor-3: #FFAC78;
+    --cor-3: #f4c1a1;
     --cor-destaque: #A64E66;
     --cor-padrão: #3E0309;
 }
@@ -16,43 +16,68 @@ body{
     color: var(--cor-padrão);
     background-color: var(--cor-de-fundo);
 }
+header {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
 header > img{
     border-radius: 35px;
+    margin-left: 40px;
 }
 header > div{
+    margin-right: 40px;
     background-color: var(--cor-cabecalho);
+    width: 960px;
+    height: 456px;
+    float: right;
 }
 header > div > h1{
+    margin: 100px 40px 10px 230px;
+    font-size: 64px;
     font-family: "Idiqlat", serif;
     font-weight: 400;
     font-style: normal;
 }
 header > div > h2{
+    font-size: 48px;
     font-family: "Alex Brush", cursive;
     font-weight: 400;
     font-style: normal;
+    text-align: center;
+}
+.isa{
+    margin-left: 70px;
+    font-family: "Alex Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 128px;
+    
 }
 nav{
     padding: 5px;
     margin: auto;
     width: 1440px;
-    border-radius: 35px;
+    border-radius: 30px;
     background-color: var(--cor-destaque);
     color: var(--cor-cabecalho);
     font-size: 32px;
 }
 nav > div{
-    padding: 5px;
-}
-nav > div > span > span{
     font-size: 40px;
-    font-family: "Alex Brush", cursive;
-    font-weight: 400;
-    font-style: normal;
+    padding: 5px;
+    display: flex;
+}
+nav > div > img{
+    margin-left: 10px;
 }
 a{
+    margin: 20px;
+    text-align: center;
     color: white;
     text-decoration: none; 
+}
+a:hover{
+    text-decoration: underline;
 }
 
 h2 {
@@ -61,13 +86,9 @@ h2 {
     font-style: normal;
 
 }
-.isa{
-  font-family: "Alex Brush", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-img{
+main > img{
     border-radius: 35px;
+    
 }
 div{
     border-radius: 35px;
@@ -77,11 +98,44 @@ main > img:nth-child(1){
     margin-left: 40px;
     display: flex;
 }
-main > #sobre_mim{
+main > #sobre_mim > h2{
+    margin-left: 80px;
+    margin-top: 20px;
+    font-size: 40px;
+}
+main > #sobre_mim > img{
+    border-radius: 35px;
+    margin-left: 10px;
+}
+main > #sobre_mim > div{
+    font-size: 20px;
+    padding: 20px;
     background-color: var(--cor-div);
+    display: flex;
+    float: left;
+    width: 1070px;
+    margin: 10px 5px 0 40px;
+    height: 311px;
 }
 #servicos > div{
-    background-color: var(--cor-div);
+    padding: 25px;
+    margin: 40px;
+    width: 340px;
+    background-color: var(--cor-3);
+}
+button{
+    border: none;
+    border-radius: 25px;
+    padding: 5px;
+    color: var(--cor-div);
+    background-color: var(--cor-destaque);
+    font-family: "Idiqlat", serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #783849;
 }
 footer > p{
     margin: auto;
