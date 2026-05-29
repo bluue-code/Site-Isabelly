@@ -13,24 +13,23 @@
     padding: 0;
 }
 body{
+    margin: 1% 3% 0% 3%;
     color: var(--cor-padrão);
     background-color: var(--cor-de-fundo);
 }
 header {
-    margin-top: 30px;
-    margin-bottom: 10px;
+    display: flex;
+    width: 100%;
+    margin: 4% 0 2% 0;
 }
 header > img{
-    border-radius: 35px;
-    margin-left: 40px;
-    width: 100%;
+    display: block;
+    margin: 0;
 }
 header > div{
+    margin-left: 20px;
     background-color: var(--cor-cabecalho);
-    width: 60%;
-    height: 456px;
-    margin-right: 40px;
-    float: right;
+    width: 100%;
 }
 header > div > h1{
     margin: 100px 40px 10px 230px;
@@ -55,9 +54,9 @@ header > div > h2{
     
 }
 nav{
+    display: flex;
     padding: 5px;
-    margin: auto;
-    width: 1440px;
+    width: 100%;
     border-radius: 30px;
     background-color: var(--cor-destaque);
     color: var(--cor-cabecalho);
@@ -69,6 +68,7 @@ nav > div{
     display: flex;
 }
 nav > div > img{
+    display: block;
     margin-left: 10px;
 }
 a{
@@ -95,33 +95,47 @@ div{
     border-radius: 35px;
 }
 main > img:nth-child(1){
+    width: 100%;
     margin-top: 1%;
-    margin-left: 40px;
     display: flex;
 }
+main > #sobre_mim > .dis{
+    display: flex;
+    width: 100%;
+    
+}
 main > #sobre_mim > h2{
-    margin-left: 80px;
+    margin-left: 40px;
     margin-top: 20px;
     font-size: 40px;
 }
 main > #sobre_mim > img{
     border-radius: 35px;
-    margin-left: 10px;
 }
-main > #sobre_mim > div{
+main > #sobre_mim > .dis > .text{
     font-size: 20px;
+    margin-right: 20px;
     padding: 20px;
     background-color: var(--cor-div);
     display: flex;
     float: left;
     width: 1070px;
-    margin: 10px 5px 0 40px;
     height: 311px;
 }
-#servicos > div{
+#servicos >  h2{
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: 40px;
+}
+#servicos > .dis-serv{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#servicos > .dis-serv > div{
     padding: 25px;
-    margin: 40px;
-    width: 340px;
+    width: 25%;
     background-color: var(--cor-3);
 }
 button{
@@ -137,6 +151,24 @@ button{
 }
 button:hover{
     background-color: #783849;
+}
+button:active{
+    background-color: #693341;
+}
+#depoimentos >  h2{
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: 40px;
+}
+#depimentos > .dis-dep{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+#depoimentos > .dis-dep > img{
+    margin: 10px;
+    display: block;
+    width: 40%;
 }
 footer > p{
     margin: auto;
