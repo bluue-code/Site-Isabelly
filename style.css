@@ -17,6 +17,9 @@ body{
     color: var(--cor-padrão);
     background-color: var(--cor-de-fundo);
 }
+img{
+    border-radius: 35px;
+}
 header {
     display: flex;
     width: 100%;
@@ -30,6 +33,9 @@ header > div{
     margin-left: 20px;
     background-color: var(--cor-cabecalho);
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 header > div > h1{
     margin: 100px 40px 10px 230px;
@@ -68,6 +74,7 @@ nav > div{
     display: flex;
 }
 nav > div > img{
+    border-radius: 0%;
     display: block;
     margin-left: 10px;
 }
@@ -87,15 +94,11 @@ h2 {
     font-style: normal;
 
 }
-main > img{
-    border-radius: 35px;
-    
-}
 div{
     border-radius: 35px;
 }
-main > img:nth-child(1){
-    width: 100%;
+main > picture:nth-child(1){
+    size: 100%;
     margin-top: 1%;
     display: flex;
 }
@@ -113,14 +116,17 @@ main > #sobre_mim > img{
     border-radius: 35px;
 }
 main > #sobre_mim > .dis > .text{
-    font-size: 20px;
-    margin-right: 20px;
-    padding: 20px;
+    font-size: 24px;
+    margin: 20px;
+    padding: 40px 20px 20px 50px;
     background-color: var(--cor-div);
-    display: flex;
+    display: inline;
     float: left;
     width: 1070px;
     height: 311px;
+}
+main > #sobre_mim > .dis > .text > p > img{
+    width: 20px;
 }
 #servicos >  h2{
     margin-left: 40px;
@@ -183,9 +189,35 @@ footer > p{
     padding: 10px;
     text-align: center;
 }
-
-footer > div{
+footer >  h2{
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: 40px;
+}
+.dispo_contatos{
+    display: flex;
+    flex-direction: row;
+}
+footer > div.dispo_contatos > div{
+    width: 100%;
+    padding: 50px 20px 0 50px;
     background-color: var(--cor-div);
+}
+footer > div.dispo_contatos > div> a{
+    font-size: 30px;
+    color: var(--cor-padrão);
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+footer > div.dispo_contatos > div> a > img{
+    width: 50px;
+    margin: 10px;
+    border-radius: 0;
+}
+footer > div.dispo_contatos > img{
+    margin: 0 0 15px 30px;
+
 }
 
 
