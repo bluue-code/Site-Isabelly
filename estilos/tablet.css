@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/* CSS para tablet*/
+
+body{
+    width: 1148px;
+}
+header > div{
+    width: 82%;
+}
+header > div > h1{
+    margin-left: 100px;
+}
+footer > div.dispo_contatos > div> a{
+    display: block;
+    margin: 1%;
+    font-size: 28px;
+}
+footer > div.dispo_contatos > div> img{
+    display: block;
+    width: 35px;
+    margin: 10px;
+    border-radius: 0;
+    margin-top: 10px;
+}
