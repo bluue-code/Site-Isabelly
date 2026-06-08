@@ -1,0 +1,107 @@
+/*Medium devices (landscape tablets, 768px and up)*/
+:root{
+    --cor-de-fundo: #e2eede;
+    --cor-cabecalho: #FFD1DE;
+    --cor-div: #EED0C8;
+    --cor-3: #f4c1a1;
+    --cor-destaque: #A64E66;
+    --cor-padrão: #3E0309;
+}
+
+nav.navegacao > div img{
+    width: 7vw;
+}
+nav.navegacao > div{
+    height: 4vw;
+}
+nav.navegacao > div > a{
+    padding: 7px;
+}
+main > #sobre_mim > .dis > .text{
+    font-size: 2.5vw;
+    padding: 40px 20px 20px 40px;
+}
+#servicos > .dis-serv{
+    color: var(--cor-padrão);
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+}
+.card{
+    flex-direction: row;
+    overflow: visible;
+    height: 28vw;
+    margin: 5px;
+    background-color: var(--cor-3);
+    padding: 20px;
+}
+.card img{
+    float: right;
+    display: flex;
+    align-items: center;
+    width: 27vw;
+    height: 28vw;
+}
+.intro{
+    width: 100%;
+    height: auto;
+    padding: 8px;
+}
+.intro h3{
+    width: 100%;
+    font-family: "Idiqlat", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--cor-padrão);
+    margin: 10px;
+    font-size: 4vw;
+}
+.intro p{
+    font-size: 2.3vw;
+    margin: 20px;
+    visibility: visible;
+    opacity: 1;
+}
+.card:hover{
+    cursor: auto;
+    height: auto;
+}
+.card:hover p{
+    visibility: visible;
+    opacity: 1;
+}
+.content{
+    margin: 230px 0 50px 550px;
+    height: 425px;
+    width: 480px;
+    border-radius: 20px;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+}
+.navigation{
+    margin: -240px 0 0 80px;
+    bottom: 160px;
+    left: 640px;
+    display: flex;
+    
+}
+footer > div.dispo_contatos > div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: var(--cor-div);
+    margin-bottom: 10px;
+}
+footer > div.dispo_contatos > div > div{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+footer > div.dispo_contatos > div > div > img{
+    margin: 5px;
+    size: 4vw;
+}
+footer > div.dispo_contatos > div > div > a{
+    font-size: 24px;
+}
+

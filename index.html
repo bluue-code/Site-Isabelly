@@ -5,9 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarot com Isabelly</title>
 
+    <!--Extra Large Devices min-width: 1200-->
     <link rel="stylesheet" href="estilos/style.css" media="all">
-    <link rel="stylesheet" href="estilos/tablet.css" media="screen and (max-width: 1000px)">
-    <link rel="stylesheet" href="estilos/celular.css" media="screen and (max-width: 375px)">
+        
+    <!-- Large devices (laptops/desktops, 992px and up)-->
+    <link rel="stylesheet" href="estilos/min992.css" media="screen and (min-width: 992px)">
+
+    <!-- Medium devices (landscape tablets, 768px and up) -->
+    <link rel="stylesheet" href="estilos/max992.css" media="screen and (max-width: 992px)">
+
+    <!--Small devices (portrait tablets and large phones, 600px and up)-->
+    <link rel="stylesheet" href="estilos/min600.css" media="screen and (min-width: 600px)">
+
+    <!--Extra small devices (phones, 600px and down) -->
+    <link rel="stylesheet" href="estilos/max600.css" media="screen and (max-width: 600px)">
 
 
     <!-- Fontes -->
@@ -46,7 +57,7 @@
     <main>
         <picture>
             <source media="(max-width: 500px)" srcset="Imagens/tarot_intro_341x131.jpg">
-            <source media="(max-width: 1267px)" srcset="Imagens/tarot_intro_734x282.jpg">
+            <source media="(max-width: 1200px)" srcset="Imagens/tarot_intro_734x282.jpg">
             <img class="img_intro" src="Imagens/tarot_intro_1440x471.jpg" alt="">
         </picture>
             
@@ -61,7 +72,11 @@
                     <p> Eu admiro todos os tipos de artes (principalmente fotografia).</p>
 
                 </div>
-                <img src="Imagens/isa_sobre_314x365.jpg" alt="">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="Imagens/isa_sobre_121x141.jpg">
+                    <source media="(max-width: 768px)" srcset="Imagens/isa_sobre_289x335.jpeg">
+                    <img src="Imagens/isa_sobre_314x365.jpg" alt="">
+                </picture>
             </div>
         </article>
             
@@ -69,35 +84,71 @@
         <article id="servicos">
             <h2>Serviços</h2>
             <div class="dis-serv">
-                <div>
-                    <img src="Imagens/tarot_2_342x207.jpg" alt="">
-                    <h3>Serviço 1</h3>
-                    <button>Clique aqui para saber mais</button>
+                <div class="card">
+                        <img src="Imagens/avulsa_tarot_342x356.jpg" alt="">
+                    <div class="intro">
+                        <h3>Leituras Avulsas</h3>
+                        
+                        <p>Uma análise bem específica e profunda pro seu caso ou tema específico, conseguindo te trazer o discernimento e tranquilidade pra suas dúvidas & situações que te deixam sem sono...</p>
+                    </div>
                 </div>
-                <div>
-                    <img src="Imagens/tarot_2_342x207.jpg" alt="">
-                    <h3>Serviço 2</h3>
-                    <button>Clique aqui para saber mais</button>
+                <div class="card">
+                        <img src="Imagens/enamorados_tarot_342x338.jpg" alt="">
+                    <div class="intro">
+                        <h3>Enamorados</h3>
+                        <p>Previsibilidade e segurança nos seus próximos 30 dias, nas suas principais areas:
+                        Amoroso, Financeiro, Professional, Estudos, Desenvolvimento pessoal  & saúde.</p>
+                    </div>
                 </div>
-                <div>
-                    <img src="Imagens/tarot_2_342x207.jpg" alt="">
-                    <h3>Serviço 3</h3>
-                    <button>Clique aqui para saber mais</button>
+                <div class="card">
+                    <img src="Imagens/mensal_tarot_342x435.jpg" alt="">
+                    <div class="intro">
+                        <h3>Leitura Mensal</h3>
+                        <p>Consulta feita para entendermos sua futura jornada amorosa com seu futuro romance 💖
+                        Concentrando todas as características do seu futuro amor e te dando uma direção sobre o que precisa ser mudado antes desse amor chegar.</p>
+                    </div>
                 </div>
             </div>
         </article>
+
+
         <article id="depoimentos">
             <h2>Depoimentos</h2>
-            <div class="dis-dep">
-                <div>
-                    <img src="Imagens/dep_1_378x329.jpg" alt="">
-                    <img src="Imagens/dep_2_356x335.jpg" alt="">
+            <div class="disp_depo">
+                <div class="content">
+                    <div class="slides">
+                        <input class="input" type="radio" name="slide" id="slide1" checked>
+                        <input class="input" type="radio" name="slide" id="slide2">
+                        <input class="input" type="radio" name="slide" id="slide3">
+                        <input class="input" type="radio" name="slide" id="slide4">
+                
+                        <div class="slide s1">
+                            <img src="./Imagens/dep_1_378x329.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dep_2_356x335.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dep_3_501x345.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./Imagens/dep_4_446x289.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="Imagens/dep_3_501x345.jpg" alt="">
-                    <img src="Imagens/dep_4_446x289.jpg" alt="">
+                <div class="navigation">
+                    <label class="bar" for="slide1"></label>
+                    <label class="bar" for="slide2"></label>
+                    <label class="bar" for="slide3"></label>
+                    <label class="bar" for="slide4"></label>
                 </div>
             </div>
+            
+            <script src="./script.js"></script>
+
+          
+
+
         </article>
     </main>
     <footer id="contatos">
@@ -106,14 +157,20 @@
         <div class="dispo_contatos">
             <div>
                 
-                <img src="Cortar_imagens/tiktok-icon.png" alt="icone do Tik Tok">
-                <a href="https://www.tiktok.com/@tarotcomisabelly?is_from_webapp=1&sender_device=pc" rel="next" target="_blank">@tarotcomisabelly</a>
+                <div>
+                    <img src="Cortar_imagens/tiktok-icon.png" alt="icone do Tik Tok">
+                    <a href="https://www.tiktok.com/@tarotcomisabelly?is_from_webapp=1&sender_device=pc" rel="next" target="_blank">/tarotcomisabelly</a>
+                </div>
                 
-                <img src="Cortar_imagens/Instagram-icon.png" alt="">
-                <a href="https://www.instagram.com/tarotcomisabelly?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" rel="next" target="_blank">@tarotcomisabelly</a>
-                
-                <img src="Cortar_imagens/whatsapp-icon.png" alt="">
-                <a href="https://wa.me/5521996224102?text=Ol%C3%A1,%20tudo%20bem?%20Entro%20em%20contato%20com%20voc%C3%AA%20atrav%C3%A9s%20do%20seu%20site!%20" target="_blank">Converse comigo pelo Whatsapp</a>
+                <div>
+                    <img src="Cortar_imagens/Instagram-icon.png" alt="">
+                    <a href="https://www.instagram.com/tarotcomisabelly?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" rel="next" target="_blank">/tarotcomisabelly</a>
+                    
+                </div>
+                <div>
+                    <img src="Cortar_imagens/whatsapp-icon.png" alt="">
+                    <a href="https://wa.me/5521996224102?text=Ol%C3%A1,%20tudo%20bem?%20Entro%20em%20contato%20com%20voc%C3%AA%20atrav%C3%A9s%20do%20seu%20site!%20" target="_blank">Converse comigo pelo Whatsapp</a>
+                </div>
             </div>
             <img src="Imagens/tarot_2_1456x521.jpg" alt="">
         </div>

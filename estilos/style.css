@@ -2,8 +2,10 @@
 
 /* CSS para geral/pc*/
 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
 :root{
-    --cor-de-fundo: #E2EEDE;
+    --cor-de-fundo: #e2eede;
     --cor-cabecalho: #FFD1DE;
     --cor-div: #EED0C8;
     --cor-3: #f4c1a1;
@@ -24,7 +26,7 @@ img{
 }
 header {
     display: flex;
-    width: 100%;
+    max-width: 100%;
     margin: 4% 0 2% 0;
 }
 header > img{
@@ -32,7 +34,7 @@ header > img{
     margin: 0;
 }
 header > div{
-    margin-left: 20px;
+    margin-left: 2%;
     background-color: var(--cor-cabecalho);
     width: 100%;
     display: flex;
@@ -40,50 +42,51 @@ header > div{
     justify-content: center;
 }
 header > div > h1{
-    margin: 100px 40px 10px 230px;
-    font-size: 300%;
+    margin: 10% 4% 1% 10%;
+    font-size: 3vw;
     font-family: "Idiqlat", serif;
     font-weight: 400;
     font-style: normal;
 }
 header > div > h2{
-    font-size: 38px;
+    margin: 3% 3% 3% 1%;
+    font-size: 3vw;
     font-family: "Alex Brush", cursive;
     font-weight: 400;
     font-style: normal;
     text-align: center;
 }
 .isa{
-    margin-left: 70px;
+    margin-left: 10%;
     font-family: "Alex Brush", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 128px;
+    font-size: 10vw;
     
 }
 nav{
+    height: auto;
     display: flex;
     padding: 6px;
     max-width: 100%;
     border-radius: 30px;
     background-color: var(--cor-destaque);
     color: var(--cor-cabecalho);
-    font-size: 32vw;
 }
 nav > div{
-    font-size: 40px;
-    padding: 5px;
+    font-size: 2.5vw;
+    padding: 10px;
     display: flex;
 }
 nav > div > img{
+    max-width: 15%;
     border-radius: 0%;
     display: block;
-    margin-left: 10px;
+    margin: 3px 10px 3px 3px;
 }
 nav.navegacao > div > a{
-    border-left: 4px solid var(--cor-cabecalho);
-    padding: 5px;
-    margin: 20px;
+    border-left: 2px solid var(--cor-cabecalho);
+    padding: 15px;
     text-align: center;
     color: white;
     text-decoration: none; 
@@ -114,78 +117,169 @@ main > #sobre_mim > .dis{
     
 }
 main > #sobre_mim > h2{
-    margin-left: 40px;
+    margin-left: 4%;
     margin-top: 20px;
-    font-size: 40px;
+    font-size: 3vw;
 }
 main > #sobre_mim > img{
     border-radius: 35px;
 }
 main > #sobre_mim > .dis > .text{
-    font-size: 24px;
-    margin: 20px;
-    padding: 40px 20px 20px 50px;
+    font-size: 2vw;
+    margin: 2%;
+    padding: 30px 20px 20px 20px;
     background-color: var(--cor-div);
     display: inline;
     float: left;
-    width: 1070px;
-    height: 311px;
+    width: 100%;
+    height: auto;
 }
 main > #sobre_mim > .dis > .text > p > img{
-    width: 20px;
+    width: 2vw;
 }
+
+
 #servicos >  h2{
-    margin-left: 40px;
-    margin-top: 20px;
-    font-size: 40px;
+    margin-left: 4%;
+    margin-top: 2%;
+    font-size: 3.5vw;
 }
 #servicos > .dis-serv{
+    color: white;
     display: flex;
-    width: 100%;
+    max-width: 100%;
     flex-direction: row;
     justify-content: space-between;
 }
-#servicos > .dis-serv > div{
-    padding: 25px;
-    width: 25%;
+.card{
+    overflow: hidden;
+    height: 30vw;
+    margin: 5px;
     background-color: var(--cor-3);
+    padding: 20px;
 }
-button{
-    border: none;
-    border-radius: 25px;
-    padding: 5px;
-    color: var(--cor-div);
-    background-color: var(--cor-destaque);
+.card img{
+    align-items: center;
+    width: 27vw;
+    height: 24vw;
+}
+
+.intro{
+    width: 23vw;
+    height: 6vw;
+    padding: 8px;
+    border-radius: 0 0 20px 20px;
+    transition: 0.8s ease;
+}
+.intro h3{
+    width: 100%;
     font-family: "Idiqlat", serif;
     font-weight: 400;
     font-style: normal;
-    cursor: pointer;
-}
-button:hover{
-    background-color: #783849;
-}
-button:active{
-    background-color: #693341;
-}
-#depoimentos >  h2{
-    margin-left: 40px;
-    margin-top: 20px;
-    font-size: 40px;
-}
-#depimentos > .dis-dep{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-}
-#depoimentos > .dis-dep > img{
+    color: var(--cor-padrão);
     margin: 10px;
-    width: 25%;
+    font-size: 2.8vw;
 }
+.intro p{
+    font-size: 1.6vw;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.card:hover{
+    cursor: pointer;
+    height: 51.6vw;
+}
+.card:hover p{
+    visibility: visible;
+    opacity: 1;
+}
+
+main > #depoimentos > h2{
+    margin-left: 4%;
+    margin-top: 20px;
+    font-size: 3vw;
+}
+
+#depoimentos > div.disp_depo{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.content{
+    margin: 290px 0 0 600px;
+    height: 525px;
+    width: 580px;
+    border-radius: 20px;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+}
+
+.content .slide img{
+    min-height: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    
+}
+
+.navigation{
+    margin: -240px 0 0 0;
+    bottom: 160px;
+    left: 650px;
+    display: flex;
+    
+}
+.bar{
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--cor-padrão);
+    margin: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    transform: .5s ease;
+}
+.bar:hover{
+    background-color: var(--cor-padrão);
+}
+.input{
+    display: none;
+}
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+.slide{
+    width: 20%;
+    transition: .6s;
+
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+#slide2:checked ~ .s1{
+    margin-left: -20%;
+}
+#slide3:checked ~ .s1{
+    margin-left: -40%;
+}
+#slide4:checked ~ .s1{
+    margin-left: -60%;
+}
+#slide5:checked ~ .s1{
+    margin-left: -80%;
+}
+
 footer > p{
     margin: auto;
     width: 100%;
     border-radius: 35px;
-    font-size: 60px;
+    font-size: 6vw;
     font-family: "Alex Brush", cursive;
     font-weight: 400;
     font-style: normal;
@@ -199,27 +293,29 @@ footer >  h2{
     margin-top: 20px;
     font-size: 40px;
 }
-footer > div.dispo_contatos > div{
+footer > div.dispo_contatos > div > div{
+    width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 30px;
+    padding: 10px;
     background-color: var(--cor-div);
     margin-bottom: 20px;
 }
-footer > div.dispo_contatos > div> a{
-    margin: 10px;
-    font-size: 34px;
+footer > div.dispo_contatos > div> div > a{
+    margin: 4px;
+    height: 2vw;
+    font-size: 2.5vw;;
     color: var(--cor-padrão);
     cursor: pointer;
 }
-footer > div.dispo_contatos > div > a:hover{
+footer > div.dispo_contatos > div > div > a:hover{
     background-color: var(--cor-div);
+    border-bottom: none;
 }
-footer > div.dispo_contatos > div> img{
+footer > div.dispo_contatos > div> div > img{
     display: block;
-    width: 4%;
-    height: 4%;
-    margin: 10px;
+    width: 4vw;
+    height: 4vw;
     border-radius: 0;
     margin-top: -10px;
 }
@@ -228,30 +324,8 @@ footer > div.dispo_contatos > img{
     margin-bottom: 30px;
 
 }
-@media  screen and (max-width: 1248px) {
-    body{
-        width: 1148px;
-    }
-    header > div{
-        width: 82%;
-    }
-    header > div > h1{
-        margin-left: 100px;
-    }
-    footer > div.dispo_contatos > div> a{
-        display: block;
-        margin: 1%;
-        font-size: 28px;
-    }
-    footer > div.dispo_contatos > div> img{
-        display: block;
-        width: 35px;
-        margin: 10px;
-        border-radius: 0;
-        margin-top: 10px;
-    }
-        
-    }
+
+
 
 
 
