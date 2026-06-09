@@ -8,28 +8,50 @@
     --cor-destaque: #A64E66;
     --cor-padrão: #3E0309;
 }
-
+*{
+    margin: 0;
+    padding: 0;
+}
 header > div{
     max-width: 100%;
 }
 header > div > h1{
     margin-left: 100px;
 }
+nav.navegacao > div >  a:active{
+    border-bottom: 4px solid var(--cor-cabecalho);
+    background-color: #8a4155;
+}
+main > #sobre_mim > img{
+    width: 30vw;
+}
 .intro p{
     font-size: 2vw;
 }
 footer > div.dispo_contatos > div{
-    width: 100%;
+    max-width: 100% !important;
     display: flex;
     flex-direction: row;
-    padding: 30px;
+    padding: 2%;
     background-color: var(--cor-div);
     margin-bottom: 20px;
+    height: 70px !important;
+    
+}
+
+footer > div.dispo_contatos > div > div{
+    background: transparent;
+
+}
+footer > div.dispo_contatos > div > div:nth-child(2){
+    margin-left: -70% !important;
+}
+
+footer > div.dispo_contatos > div > div:nth-child(3){
+    margin-left: -70% !important;
 }
 footer > div.dispo_contatos > div> div > a{
-    margin: 4px;
-    height: 2vw;
-    font-size: 2.5vw;;
+    font-size: 2.3vw;;
     color: var(--cor-padrão);
     cursor: pointer;
 }

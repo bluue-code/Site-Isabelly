@@ -7,15 +7,23 @@
     --cor-destaque: #A64E66;
     --cor-padrão: #3E0309;
 }
-
+*{
+    margin: 0;
+    padding: 0;
+}
 nav.navegacao > div img{
-    width: 7vw;
+    width: 8vw;
+    height: 5vw;
 }
 nav.navegacao > div{
     height: 4vw;
 }
 nav.navegacao > div > a{
     padding: 7px;
+}
+nav.navegacao > div >  a:active{
+    border-bottom: 4px solid var(--cor-cabecalho);
+    background-color: #8a4155;
 }
 main > #sobre_mim > .dis > .text{
     font-size: 2.5vw;
@@ -89,7 +97,7 @@ footer > div.dispo_contatos > div{
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     background-color: var(--cor-div);
     margin-bottom: 10px;
 }

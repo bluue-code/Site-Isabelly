@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/*Extra extra small devices (phones, 400px and down)*/
+
+nav.navegacao > div > a{
+    font-size: 10px;
+    padding: 2px 4px 4px 4px;
+}
+nav.navegacao > div > a:hover{
+    border-bottom: none;
+}
+main > #sobre_mim > h2{
+    margin-top: 5px;
+}
+
+.card > img:nth-child(3){
+    height: 40vw;
+}
+.content{
+    margin: 43% 0 35% 70%;
+    height: 265px;
+    width: 240px;
+}
+
+footer > div.dispo_contatos > div{
+    height: 35vw;
+    max-width: 95%;
+}
