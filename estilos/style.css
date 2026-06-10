@@ -327,7 +327,7 @@ footer > div.dispo_contatos > img{
     margin-bottom: 30px;
 
 }
-@media only screen and (orientation: landscape) {
+@media only screen and (orientation: portrait) {
   body {
     background-color: lightblue;
   }
