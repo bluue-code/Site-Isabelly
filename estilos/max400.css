@@ -44,7 +44,7 @@ footer > div.dispo_contatos > div{
     height: 35vw;
     max-width: 95%;
 }
-@media (min-width: 340px){
+@media (min-width: 380px){
     header > div{
         height: 38vw;
     }
