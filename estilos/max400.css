@@ -46,7 +46,7 @@ footer > div.dispo_contatos > div{
 }
 @media (min-width: 340px){
     header > div{
-        height: 35vw;
+        height: 38vw;
     }
     .content{
         margin: 35% 0 40% 60%;
