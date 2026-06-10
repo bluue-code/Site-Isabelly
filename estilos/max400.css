@@ -48,8 +48,12 @@ footer > div.dispo_contatos > div{
     header > div{
         height: 38vw;
     }
+    nav.navegacao > div > a{
+        font-size: 10px;
+        padding: 2px 4px 4px 4px;
+    }
     .content{
-        margin: 35% 0 40% 60%;
+        margin: 55% 0 80% 60%;
         height: 205px;
         width: 240px;
     }
