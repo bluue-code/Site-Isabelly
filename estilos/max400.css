@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /*Extra extra small devices (phones, 400px and down)*/
-
+header > div{
+    height: 35vw;
+}
 nav.navegacao > div > a{
     font-size: 10px;
     padding: 2px 4px 4px 4px;
@@ -11,17 +13,44 @@ nav.navegacao > div > a:hover{
 main > #sobre_mim > h2{
     margin-top: 5px;
 }
-
+main > #sobre_mim > .dis{
+    margin-bottom: 30px;
+}
+main > #sobre_mim > .dis > .text{
+    padding: 3% 2% 10% 6%;
+    height: 22vw;
+    font-size: 2.4vw;
+}
+.card{
+    padding: 10px 10px 20px  10px;
+}
 .card > img:nth-child(3){
-    height: 40vw;
+    height: 28vw;
+    cursor: auto;
 }
 .content{
-    margin: 43% 0 35% 70%;
-    height: 265px;
+    margin: 35% 0 35% 75%;
+    height: 205px;
     width: 240px;
 }
-
+.navigation{
+    margin: -220px 0 0 0;
+    
+}
+footer > p{
+    width: 95%;
+}
 footer > div.dispo_contatos > div{
     height: 35vw;
     max-width: 95%;
+}
+@media (min-width: 340px){
+    header > div{
+        height: 38vw;
+    }
+    .content{
+        margin: 35% 0 40% 60%;
+        height: 205px;
+        width: 240px;
+    }
 }

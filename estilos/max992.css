@@ -11,6 +11,9 @@
     margin: 0;
     padding: 0;
 }
+header > div{
+    height: 30vw;
+}
 nav.navegacao > div img{
     width: 8vw;
     height: 5vw;
@@ -72,7 +75,11 @@ main > #sobre_mim > .dis > .text{
 }
 .card:hover{
     cursor: auto;
-    height: auto;
+    height: 28vw;
+}
+.card:hover:nth-child(3){
+    cursor: auto;
+    height: 28vw;
 }
 .card:hover p{
     visibility: visible;

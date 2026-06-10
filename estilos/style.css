@@ -33,6 +33,7 @@ header {
 header > img{
     display: block;
     margin: 0;
+    height: 30vw;
 }
 header > div{
     margin-left: 2%;
@@ -41,6 +42,7 @@ header > div{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-height: 100%
 }
 header > div > h1{
     margin: 10% 4% 1% 10%;
@@ -276,10 +278,6 @@ main > #depoimentos > h2{
 #slide4:checked ~ .s1{
     margin-left: -60%;
 }
-#slide5:checked ~ .s1{
-    margin-left: -80%;
-}
-
 footer > p{
     margin: auto;
     width: 100%;

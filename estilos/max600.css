@@ -2,9 +2,14 @@
 
 header > div{
     max-width: 100%;
+    height: 28vw;
+
 }
 header > div > h1{
     margin-left: 8vw;
+}
+header > div > h2{
+    margin-bottom: 20px;
 }
 nav.navegacao > div{
     padding: 3px;
@@ -28,12 +33,12 @@ nav.navegacao > div >  a:active{
     background-color: #8a4155;
 }
 main > #sobre_mim > .dis{
-    height: 35vw;
+    height: 30vw;
     margin-bottom: 20px;
 }
 main > #sobre_mim > .dis > .text{
-    padding: 5% 2% 6% 6%;
-    height: 26vw;
+    padding: 3% 2% 6% 6%;
+    height: 19vw;
     font-size: 2.4vw;
 }
 
@@ -75,12 +80,12 @@ main > #sobre_mim > .dis > .text{
     height: 28vw;
 }
 .content{
-    margin: 50% 50% 100px 140%;
+    margin: 35% 0 0 80%;
     height: 295px;
     width: 320px;
 }
 .navigation{
-    margin: -230px 0 0 40px;
+    margin: -140px 0 0 40px;
     
 }
 

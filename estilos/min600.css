@@ -1,4 +1,8 @@
 /*Small devices (portrait tablets and large phones, 600px and up)*/
+
+header > div{
+    min-height: 100%;
+}
 main > #sobre_mim > .dis{
     max-width: 100%;
 }
