@@ -42,7 +42,8 @@ header > div{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 100%
+    min-height: 9vw;
+    max-height: 458px;
 }
 header > div > h1{
     margin: 10% 4% 1% 10%;
@@ -52,7 +53,7 @@ header > div > h1{
     font-style: normal;
 }
 header > div > h2{
-    margin: 3% 3% 3% 1%;
+    margin: 0 3% 10% 1%;
     font-size: 3vw;
     font-family: "Alex Brush", cursive;
     font-weight: 400;

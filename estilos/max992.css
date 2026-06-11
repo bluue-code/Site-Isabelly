@@ -1,4 +1,4 @@
-/*Medium devices (landscape tablets, 768px and up)*/
+/*Medium devices (landscape tablets, 992px and up)*/
 :root{
     --cor-de-fundo: #e2eede;
     --cor-cabecalho: #FFD1DE;
@@ -6,13 +6,6 @@
     --cor-3: #f4c1a1;
     --cor-destaque: #A64E66;
     --cor-padrão: #3E0309;
-}
-*{
-    margin: 0;
-    padding: 0;
-}
-header > div{
-    height: 30vw;
 }
 nav.navegacao > div img{
     width: 8vw;
@@ -24,7 +17,7 @@ nav.navegacao > div{
 nav.navegacao > div > a{
     padding: 7px;
 }
-nav.navegacao > div >  a:active{
+nav.navegacao > div >  a:checked{
     border-bottom: 4px solid var(--cor-cabecalho);
     background-color: #8a4155;
 }

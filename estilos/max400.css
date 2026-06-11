@@ -1,8 +1,6 @@
 @charset "UTF-8";
 /*Extra extra small devices (phones, 400px and down)*/
-header > div{
-    height: 35vw;
-}
+
 nav.navegacao > div > a{
     font-size: 10px;
     padding: 2px 4px 4px 4px;
@@ -44,16 +42,13 @@ footer > div.dispo_contatos > div{
     height: 35vw;
     max-width: 95%;
 }
-@media (min-width: 380px){
-    header > div{
-        height: 38vw;
-    }
+@media (max-width: 400px){
     nav.navegacao > div > a{
         font-size: 10px;
         padding: 2px 4px 4px 4px;
     }
     .content{
-        margin: 55% 0 80% 60%;
+        margin: 35% 0 40% 80%;
         height: 205px;
         width: 240px;
     }

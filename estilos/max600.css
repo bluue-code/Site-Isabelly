@@ -1,12 +1,11 @@
 @charset "UTF-8";
-
+/*Extra small devices (phones, 600px and down)*/
 header > div{
     max-width: 100%;
-    height: 28vw;
 
 }
 header > div > h1{
-    margin-left: 8vw;
+    margin-left: 4vw;
 }
 header > div > h2{
     margin-bottom: 20px;
@@ -20,7 +19,7 @@ nav.navegacao > div > img{
     height: 6vw;
 }
 nav.navegacao > div > a{
-    font-size: 14px;
+    font-size: 3vw;
     padding: 2px 4px 2px 4px;
 }
 
@@ -33,11 +32,11 @@ nav.navegacao > div >  a:active{
     background-color: #8a4155;
 }
 main > #sobre_mim > .dis{
-    height: 30vw;
+    height: 33vw;
     margin-bottom: 20px;
 }
 main > #sobre_mim > .dis > .text{
-    padding: 3% 2% 6% 6%;
+    padding: 3% 2% 8% 6%;
     height: 19vw;
     font-size: 2.4vw;
 }
@@ -65,7 +64,7 @@ main > #sobre_mim > .dis > .text{
     height: 30vw;
 }
 .card > img:nth-child(3){
-    height: 32vw;
+    height: 35vw;
 }
 .card:hover{
     cursor: auto;
@@ -80,7 +79,7 @@ main > #sobre_mim > .dis > .text{
     height: 28vw;
 }
 .content{
-    margin: 35% 0 0 80%;
+    margin: 40% 0 0 80%;
     height: 295px;
     width: 320px;
 }
