@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*Extra extra small devices (phones, 400px and down)*/
+/*Extra extra small devices (phones, 540px and down)*/
 
 nav.navegacao > div > a{
     font-size: 10px;
@@ -51,7 +51,7 @@ footer > div.dispo_contatos > div{
     padding: 5% 2% 10% 6%;
 }
     .content{
-        margin: 45% 0 50% 90%;
+        margin: 35% 0 40% 70%;
         height: 205px;
         width: 240px;
     }

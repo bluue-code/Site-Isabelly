@@ -37,7 +37,7 @@ main > #sobre_mim > .dis{
 }
 main > #sobre_mim > .dis > .text{
     padding: 3% 2% 8% 6%;
-    height: 19vw;
+    height: 25vw;
     font-size: 2.4vw;
 }
 
@@ -79,7 +79,7 @@ main > #sobre_mim > .dis > .text{
     height: 28vw;
 }
 .content{
-    margin: 40% 0 0 80%;
+    margin: 30% 0 0 80%;
     height: 295px;
     width: 320px;
 }
