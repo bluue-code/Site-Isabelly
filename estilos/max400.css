@@ -16,7 +16,7 @@ main > #sobre_mim > .dis{
 }
 main > #sobre_mim > .dis > .text{
     padding: 3% 2% 5% 6%;
-    height: 24vw;
+    height: 28vw;
     font-size: 2.4vw;
 }
 .card{
@@ -27,7 +27,7 @@ main > #sobre_mim > .dis > .text{
     cursor: auto;
 }
 .content{
-    margin: 25% 0 30% 50%;
+    margin: 30% 0 35% 60%;
     height: 205px;
     width: 240px;
 }
@@ -36,7 +36,7 @@ main > #sobre_mim > .dis > .text{
     
 }
 footer > p{
-    width: 95%;
+    width: 90%;
 }
 footer > div.dispo_contatos > div{
     height: 35vw;
