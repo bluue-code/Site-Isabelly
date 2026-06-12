@@ -98,7 +98,7 @@ main > #sobre_mim > .dis > .text{
     transform: .5s ease;
 }
 footer > p{
-    width: 95%;
+    max-width: 95%;
 }
 footer > div.dispo_contatos > div{
     height: 30vw;
